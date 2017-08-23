@@ -124,7 +124,7 @@
                 </formatter>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:modcluster:1.2">
-                <mod-cluster-config proxy-list="10.5.11.172:6666,10.5.11.173:6666" advertise="false" connector="default">
+                <mod-cluster-config proxy-list=":6666" advertise="false" connector="default">
                     <dynamic-load-provider>
                         <load-metric type="busyness"/>
                     </dynamic-load-provider>
@@ -366,7 +366,7 @@
                 </security-domains>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:transactions:2.0">
-                <core-environment node-identifier="CacheDomain">
+                <core-environment node-identifier="Domain">
                     <process-id>
                         <uuid/>
                     </process-id>
